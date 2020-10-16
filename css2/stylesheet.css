@@ -1,0 +1,265 @@
+/*
+Name: Tony Dam
+Email: tony_dam@student.uml.edu
+Affiliation: Junior Student at UMass Lowell in COMP.4610-201
+             91.61 GUI Programming I
+Date created: 9/14/20
+
+Sources from: W3Schools, Stackoverflow, Youtube,
+and Codepen (for animation: https://codepen.io/yoma83/pen/YvZXBp)
+Official graphics assets used
+
+Website was created for personal use to display my future
+assignments and have a small bio of myself.
+Copyright (c) September 21st, 2020 Tony Dam. All rights reserved.
+May be freely copied or excerpted for educational purposes with credit to
+author.
+ */
+
+/* Border and margins do not increase div size */
+* {
+  box-sizing: border-box;
+}
+
+/* Adjusting the body/ background of site */
+
+body {
+  background-color: #FFFFFF;
+}
+
+ body, html {
+  padding: 0;
+  margin: 0;
+  background-image: url("../bg.gif");
+     background-size: cover;
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  }
+  /*------------------------------Begin Petals animations---------------------------*/
+  .petals {
+     content: '';
+     display: block;
+     position: absolute;
+     z-index: 2;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     pointer-events: none;
+     background-image: url("../Sakura Pedals.png");
+      animation: petals 20s linear infinite;
+  }
+
+  @keyframes petals {
+   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+   100% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+
+  @media {
+      .woocommerce ul.products li.product,
+      .woocommerce-page ul.products li.product,
+      .woocommerce-page[class*=columns-] ul.products li.product,
+      .woocommerce[class*=columns-] ul.products li.product {
+          width: 100%;
+          float: left;
+          clear: both;
+          margin: 0 7em;
+      }
+  }
+/*------------------------------End Petals animations------------------------------*/
+/* ------------------------------Top banner of the site configurations------------------------------ */
+.banner{/*changes the features and placement to the header of the page*/
+  font: normal 55px "Calibri";
+  color: #fff;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #245196;
+  text-shadow: 4px 4px 10px #245196;
+  text-align: center;
+  padding:6%;
+  background: url("../banner.png") no-repeat center;
+  background-size: cover;
+}
+/* ------------------------------Header banners of the body configurations------------------------------ */
+.header{/*changes the features and placement to the header of the page*/
+  /*Banner size*/
+  background: url("../banner2.png") no-repeat;
+  /*  background-image: url("C:/Users/VIP1/Desktop/GUI/banner2.png");*/
+     width: auto;
+     height: auto;
+     padding: 2%;
+     background-size: 95%;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+p {
+  color: white;
+  font-size: 20px; /* 14px/16=0.875em */
+}
+/* ------------------------------Text changes configurations------------------------------ */
+/*Text changes in head */
+.text{
+font: 35px "Calibri";
+color: #fff;
+-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #245196;
+text-shadow: 4px 4px 10px #245196;
+text-align: left;
+margin-left: 20px
+}
+/*Text changes in Copyright */
+.bodyTextCR{
+  font: 10px "Arial";
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
+  text-align: center;
+   margin-left: 20px;
+   margin: 30px;
+   background-color: #471968;
+   border: 1px solid #471968;
+   opacity: 0.8;
+}
+/*Text changes in body paragraphs */
+.bodyText{
+  font: 16px "Calibri";
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
+   text-align: center;
+   margin-left: 20px;
+   margin: 50px;
+   background-color: #DEDEDE;
+   border: 1px solid #DEDEDE;
+   opacity: 0.8;
+}
+
+/* ------------------------------Botton CSS configurations------------------------------ */
+/*Creates button colors for Homework Links in body paragraphs */
+ .btn {
+   border: 3px solid black;
+   background-color: #B696CC;
+   color: black;
+   padding: 14px 28px;
+   font-size: 16px;
+   cursor: pointer;
+ }
+
+ .btn {
+   border-color: #9982AE;
+   color: red
+ }
+
+ .btn:hover {
+   background: #9782A5;
+   color: white;
+ }
+/*Creates button colors for Links Links in body paragraphs */
+ .btn2 {
+   border: 3px solid black;
+   background-color: #FFA7C5;
+   color: black;
+   padding: 14px 28px;
+   font-size: 16px;
+   cursor: pointer;
+ }
+
+ .btn2 {
+   border-color: #FF7FAC;
+   color: red
+ }
+
+ .btn2:hover {
+   background: #FF7FAC;
+   color: white;
+ }
+
+
+/*Adjusts button sets positions */
+/*Adjusts Homework buttons positions */
+.HWContainer{
+  width: auto;
+  margin-left: 15%;
+  margin-right: 0%;
+}
+/*Adjusts Links buttons positions */
+.LinksContainer{
+  width: auto;
+  margin-left: 35%;
+  margin-right: 0%;
+}
+
+/* ------------------------------Table CSS Configurations------------------------------ */
+.row {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 0 4px;
+}
+/* Create 3 equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 75px;
+  padding: 3px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 0px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+.table{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* ------------------------------Hoverbox for Switch CSS configurations------------------------------ */
+.switchBox {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.switchLogo {
+  position: relative;
+  width: 50%;
+}
+.switchLogo:hover .image {
+  opacity: 0.3;
+}
+
+.switchLogo:hover .switchBox {
+  opacity: 1;
+}
+
+.switchText{
+  font: 10px "Arial";
+  background-color: #FF0000;
+   color: white;
+   font-size: 12px;
+   padding: 16px 32px;
+}

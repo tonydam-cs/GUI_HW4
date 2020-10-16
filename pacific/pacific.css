@@ -1,0 +1,142 @@
+/*
+Name: Tony Dam
+Email: tony_dam@student.uml.edu
+Affiliation: Junior Student at UMass Lowell in COMP.4610-201
+             91.61 GUI Programming I
+Date created: 9/27/20
+
+Sources from: W3Schools, Stackoverflow
+
+Website was modified for a Homework Assignment/ Practice.
+Copyright (c) September 27th, 2020 Tony Dam. All rights reserved.
+May be freely copied or excerpted for educational purposes with credit to
+author.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/* Top of Website Banner */
+header {
+  background: url("sunset.jpg") no-repeat right; /*Adds banner image */
+	background-color: #010232; /* Adds dark blue color to banner since Banner
+                                banner size is too small */
+  color: #ffffff; /* Banner text white */
+	text-align: left; /* Positions text to left of banner */
+}
+
+/* Edits the background/ whole site */
+body {
+ 	background-image: url("ptrbackground.jpg"); /*adds the gradient background*/
+	background-repeat: repeat-x; /* fills up the page with the gradient */
+	background-color: #00569f; /* safe measure to make sure the gradient is fills the page
+                                all the way down */
+	font-family: Arial, Helvetica, sans-serif; /*Font*/
+}
+
+/* Edits rectangle box of the site */
+#wrapper {
+	display:block;
+	min-width: 600px;
+	max-width: 80%;
+	margin: auto;
+	background-color:#90C7E3; /* fills background color of navigation */
+}
+
+/* Edits the title of the body */
+span.resort {
+	font-weight: bold; /* makes title bold */
+	color: #7992AA; /* changes color of title */
+}
+
+/* Edits body text */
+#content
+{
+	background-color: #fff; /*creates a white for body */
+	margin: auto;
+	padding: 1px 0px 0px 30px; /* spaces out body to be seperate from the nav and banner */
+	margin-left: 195px; /* moves white space to not override the nav */
+  color: #8a8a8c; /* changes text color to gray */
+}
+
+/* inputs image from HTML file */
+#content img{
+		float: left; /*aligns image to left */
+		margin-right: 20px; /*moves it so it's not to the edge */
+}
+
+/*Edits content text to display properly */
+#content ul, p {
+	display:  block;
+  margin-right: 15px;
+  list-style:none;
+}
+#content li::before{
+	content: url(marker.gif); /* Edits bullet points of content */
+	padding-right: 8px; /* moves content text of bullets to space out */
+}
+
+/*Edits the bullet points in navigation (left of site) for proper formatting*/
+nav{
+	float: left;
+	width: 185px;
+	padding-left: 2px;
+}
+nav ul {
+	float: right;
+	padding: 23px 50px 0px 20px;
+	list-style-type: none;
+	font-size: 1.2em;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+nav a:link {
+	text-decoration: none;
+	font-weight:bold;
+	color: #0E0D3A; /* Font color before it's pressed */
+}
+nav a:visited {
+	color: #344873; /* Font color after it's pressed */
+}
+nav a:hover {
+	color: #FFFFFF; /* Font color when hovering link */
+}
+
+/*Edits headers texts of the pages */
+h1 {
+	margin-bottom: 0;
+	padding: 15px 0px 15px 10px; /* header's spacing at banner */
+}
+h2 {
+	color: #3399CC; /*header at body, font color */
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif; /*headers fonts */
+}
+
+/*Edits contact information text*/
+#contact {
+	font-size: 85%; /* changes text size at contact */
+}
+
+dt {
+	color: #000033;
+}
+
+/*Edits the footer of the site */
+footer {
+	background-color: #fff; /*makes footer white */
+	font-family: Georgia, "Times New Roman", serif; /* footer font */
+	font-style: italic; /* makes footer font italic */
+  color: #8a8a8c; /* makes footer text a gray color */
+	font-size: 80%; /* changhes footer text size */
+	text-align: left; /*aligns footer text to the left */
+	padding: 45px 0px 20px 20px; /*adjusts the footer position */
+	margin-left: 195px;
+}
